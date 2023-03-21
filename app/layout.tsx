@@ -11,12 +11,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Reshaped theme="reshaped">
-      <html>
-        <head>
-          <title>Next.js Turbopack App Directory Playground</title>
-        </head>
-        <body className="overflow-y-scroll bg-zinc-900">
+    <html>
+      <head>
+        <title>Next.js Turbopack App Directory Playground</title>
+      </head>
+      <body className="overflow-y-scroll bg-zinc-900">
+        <Reshaped theme="reshaped">
           <div className="grid grid-cols-[1fr,minmax(auto,240px),min(800px,100%),1fr] gap-x-8 py-8">
             <div className="col-start-2">
               <GlobalNav />
@@ -55,8 +55,8 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-        </body>
-      </html>
-    </Reshaped>
+        </Reshaped>
+      </body>
+    </html>
   );
 }
